@@ -1,7 +1,7 @@
 header {
     display: grid;
     grid-template-columns: 1fr 5fr 0.5fr 0.5fr;
-    grid-template-rows: repeat(5, 4fr);
+    
     /* border: solid; */
     text-align: center;
     gap : 10px
@@ -35,4 +35,56 @@ header {
     height: 100px;
     border: solid green;
 }
+.ligne2 {
+display: grid;
+grid-template-columns: 25% 25% 25% 25%;
+border: solid purple;
+padding-left:5px;
+text-align: center;
 
+}
+.lignes2 p{
+font-size: 8px 
+}
+
+.description {
+    border: solid orange;
+    font-size: 12px;
+    
+    
+}
+a{
+    text-decoration: none;
+}
+
+
+.bouton {
+    border: solid pink;
+    display:grid;
+    grid-template-columns: 30% 30% 20%;
+    font-size: 11px;
+    justify-content: space-evenly;
+}
+#following {
+    background-color: #0095f6;
+    border-radius: 5px;
+    color:white;
+    border:0
+   
+}
+.photos img {
+    width:30vw;
+    height:10vh; ;
+    border: solid rgb(172, 171, 171)
+}
+.photos{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-between;
+    gap:8px
+}
+.séparateur {
+    border: solid black;
+    height: 20px;
+    width: 100%;
+}
