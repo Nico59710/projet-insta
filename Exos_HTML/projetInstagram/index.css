@@ -1,0 +1,38 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 5fr 0.5fr 0.5fr;
+    grid-template-rows: repeat(5, 4fr);
+    /* border: solid; */
+    text-align: center;
+    gap : 10px
+}
+
+#titre {
+    border: solid red
+}
+
+#logofleche {
+    display: grid;
+    border: solid blue;
+    align-items: center;
+    justify-items: center;
+}
+
+#menu {
+    display: grid;
+    border: solid yellow;
+    align-items: center;
+    justify-items: center;
+}
+#cloche {
+    display: grid;
+    border: solid yellow;
+    align-items: center;
+    justify-items: center;
+}
+#photoprofil{
+    clip-path: circle();
+    height: 100px;
+    border: solid green;
+}
+
