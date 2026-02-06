@@ -3,7 +3,19 @@ header {
     grid-template-columns: 1fr 5fr 0.5fr 0.5fr ;
     /* border: solid; */
     text-align: center;
-    gap: 10px
+    gap: 10px;
+    
+}
+body{
+    animation: skeletton 5s ease-in-out forwards;
+}
+
+@keyframes skeletton {
+    0%{opacity :0}
+    25%{opacity:0}
+    50%{opacity : 0}
+    75%{opacity : 0}
+    100%{ opacity : 1}
 }
 
 #titre{
@@ -108,13 +120,18 @@ a {
 
 
 .bouton {
-    border: solid pink;
+    
     display: grid;
     grid-template-columns: 1fr 1fr 40px;
     gap : 10px;
     font-size: 11px;
     justify-content: space-evenly;
-    margin-top: 5px;
+    margin-top: 10px;
+    height:30px;
+    margin-bottom:10px
+    
+    
+    
 }
 
 #following {
@@ -124,22 +141,21 @@ a {
     border: 0
 }
 
-.photos img {
+.photo {
     width: 30vw;
     height: 10vh;
-    ;
-    border: solid rgb(172, 171, 171)
+    border: solid  grey 1px  ;
+    
 }
 
 .photos {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    justify-content: space-between;
-    gap: 8px
+    grid-template-columns: 1fr 1fr 1fr;
+    
+gap :5px;
+
 }
 
-.séparateur {
-    border: solid black;
-    height: 20px;
-    width: 100%;
-}
+
+
+
