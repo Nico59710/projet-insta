@@ -1,88 +1,143 @@
 header {
     display: grid;
-    grid-template-columns: 1fr 5fr 0.5fr 0.5fr;
-    
+    grid-template-columns: 1fr 5fr 0.5fr 0.5fr ;
     /* border: solid; */
     text-align: center;
-    gap : 10px
+    gap: 10px
 }
 
-#titre {
-    border: solid red
+#titre{
+    display: flex;
+    /* border: solid red; */
+    margin-right: 0px;
+    justify-content: center;
 }
 
 #logofleche {
     display: grid;
-    border: solid blue;
+    /* border: solid blue; */
     align-items: center;
     justify-items: center;
 }
 
 #menu {
     display: grid;
-    border: solid yellow;
+    /* border: solid yellow; */
     align-items: center;
     justify-items: center;
 }
+#check{
+    display: grid;
+    /* border : solid green; */
+    align-items: center;
+}
+
 #cloche {
     display: grid;
-    border: solid yellow;
+    /* border: solid yellow; */
     align-items: center;
     justify-items: center;
 }
-#photoprofil{
-    clip-path: circle();
-    height: 100px;
-    border: solid green;
+
+#photoprofil {
+    display: grid;
+    border: blue solid 5px ;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 85px;    
+    border: 4px solid transparent;
+    border-radius: 50%;
+    background:
+        linear-gradient(white, white) padding-box,
+        linear-gradient(135deg, #ff00cc, #3333ff) border-box;
 }
+
+
+
+#photoprofil img {
+    display: grid;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+
+    /* border: solid green; */
+}
+
+img {
+    object-fit: contain
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding-left: 0px;
+}
+
 .ligne2 {
-display: grid;
-grid-template-columns: 25% 25% 25% 25%;
-border: solid purple;
-padding-left:5px;
-text-align: center;
-
-}
-.lignes2 p{
-font-size: 8px 
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* border: solid purple; */
+    align-items: center;
+    text-align: center;
 }
 
-.description {
-    border: solid orange;
+.descriptions h4{
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-size:medium;
+}
+
+
+.ligne2 p {
+    font-size: 12px
+}
+
+.descriptions {
+    display: grid;
+    /* border: solid orange; */
     font-size: 12px;
-    
-    
+    margin-top: 0px;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
 
 .bouton {
     border: solid pink;
-    display:grid;
-    grid-template-columns: 30% 30% 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 40px;
+    gap : 10px;
     font-size: 11px;
     justify-content: space-evenly;
+    margin-top: 5px;
 }
+
 #following {
     background-color: #0095f6;
     border-radius: 5px;
-    color:white;
-    border:0
-   
+    color: white;
+    border: 0
 }
+
 .photos img {
-    width:30vw;
-    height:10vh; ;
+    width: 30vw;
+    height: 10vh;
+    ;
     border: solid rgb(172, 171, 171)
 }
-.photos{
+
+.photos {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     justify-content: space-between;
-    gap:8px
+    gap: 8px
 }
+
 .séparateur {
     border: solid black;
     height: 20px;
