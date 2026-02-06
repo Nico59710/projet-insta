@@ -5,8 +5,10 @@ header {
     text-align: center;
     gap: 10px;
     
+    
 }
-body{
+
+visible{
     animation: skeletton 5s ease-in-out forwards;
 }
 
@@ -79,7 +81,7 @@ body{
 }
 
 img {
-    object-fit: contain
+    width: 100%;
 }
 
 ul {
@@ -142,20 +144,58 @@ a {
 }
 
 .photo {
-    width: 30vw;
-    height: 10vh;
+    object-fit:cover;
     border: solid  grey 1px  ;
     
 }
 
 .photos {
+    width:100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
-gap :5px;
+    gap :5px;
 
 }
+.skeletton {
+   color:#b1707000;
+   background-color: #f4f4f700;
 
+}
+.skeletton img {
+    
+    visibility:hidden
+}
+.skeletton bouton {
+    color:hsl(0, 6%, 84%);
+    
+}
+.skeletton button{
+    background-color: hsl(0, 6%, 84%);
+    color:white;
+    border: solid 1px #ffffff;
+}
+.skeletton #following {
+    background-color: hsl(0, 6%, 84%);
+    color:white;
+    border: solid 1px #ffffff;
+}
+.skeletton #photoprofil {
+    border: solid 1px hsl(0, 6%, 84%);
+    background-color:hsl(0, 6%, 84%)
+    
+    
+}
+.skeletton .photo {
+    border:1px solid #ffffff;
+    background-color: hsl(0, 6%, 84%);
+}
+.skeletton a {
+    color: #ffffff;
+}
+
+.skeletton {
+    display:none
+}
 
 
 
