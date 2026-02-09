@@ -8,17 +8,43 @@ header {
     
 }
 
-visible{
-    animation: skeletton 5s ease-in-out forwards;
+.visible{
+    animation: visible 5s ease-in-out forwards;
 }
 
-@keyframes skeletton {
-    0%{opacity :0}
-    25%{opacity:0}
-    50%{opacity : 0}
-    75%{opacity : 0}
-    100%{ opacity : 1}
+@keyframes visible {
+    0%{display:none; opacity:0}
+    25%{display:none; opacity:0}
+    50%{display:none; opacity:0}
+    75%{display:none; opacity:0}
+    100%{visibility : visible; opacity:1}
 }
+.skeletton .photo{
+    animation: skeletton 5s ease-in-out forwards; 
+    background:linear-gradient(90deg, #c6c7c8, #f8f8f9);
+    background-size: 200% 100%;
+
+}
+.skeletton button{
+    animation: skeletton 5s ease-in-out forwards; 
+    background:linear-gradient(90deg, #c1c4c6, #f6f6f7);
+    background-size: 200% 100%;
+}
+@keyframes skeletton {
+    0%{visibility :visible; opacity:1 ;background-position: 0% 50%}
+    10%{visibility :visible; opacity:1; background-position: 100% 50%}
+    20%{visibility :visible; opacity:1 ;background-position: 0% 50%}
+    30%{visibility :visible; opacity:1 ; background-position: 100% 50%}
+    40%{visibility :visible; opacity:1 ;background-position: 0% 50%}
+    50%{visibility :visible; opacity:1 ; background-position: 100% 50%}
+    60%{visibility :visible; opacity:1 ;background-position: 0% 50%}
+    70%{visibility :visible; opacity:1 ; background-position: 100% 50%}
+    80%{visibility :visible; opacity:1 ;background-position: 0% 50%}
+    90%{visibility :visible; opacity:1 ; background-position: 100% 50%}
+    100%{display:none; opacity:0}
+
+}
+
 
 #titre{
     display: flex;
@@ -81,7 +107,7 @@ visible{
 }
 
 img {
-    width: 100%;
+    width:100%
 }
 
 ul {
@@ -145,12 +171,13 @@ a {
 
 .photo {
     object-fit:cover;
-    border: solid  grey 1px  ;
+    border: solid  grey 1px;
     
 }
 
 .photos {
-    width:100%;
+   
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap :5px;
@@ -193,9 +220,17 @@ a {
     color: #ffffff;
 }
 
-.skeletton {
+/* .skeletton {
     display:none
+} */
+
+
+[data-theme="dark"] {
+    background-color: #000000;
+    color: white;
 }
+[data-theme="light"]  {
+    color;
+    background-color: #ffffff00;
 
-
-
+}
