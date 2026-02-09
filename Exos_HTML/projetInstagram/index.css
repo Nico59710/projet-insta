@@ -170,8 +170,9 @@ a {
 }
 
 .photo {
-    object-fit:cover;
+    
     border: solid  grey 1px;
+    
     
 }
 
@@ -220,9 +221,7 @@ a {
     color: #ffffff;
 }
 
-/* .skeletton {
-    display:none
-} */
+
 
 
 [data-theme="dark"] {
@@ -230,7 +229,20 @@ a {
     color: white;
 }
 [data-theme="light"]  {
-    color;
+    
     background-color: #ffffff00;
 
+}
+.photo:active
+{
+   transform: scale(1.5);
+   transition: transform 0.3s ease-in-out;
+}
+
+.light {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    margin-left: 345px;
 }
