@@ -7,9 +7,11 @@ header {
 
 }
 
-body {
-    /* animation: skeletton 5s ease-in-out forwards; */
-}
+/* body {
+    animation: skeletton 5s ease-in-out forwards;
+} */
+
+
 
 @keyframes skeletton {
     0% {
@@ -170,7 +172,7 @@ a {
 .photos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2px
+    gap: 2px;    
 }
 
 img {
@@ -181,5 +183,5 @@ img {
 .photo-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover;    
 }
